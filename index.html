@@ -10,10 +10,10 @@
 <body>
     <div class="container-fluid">
         <h1 class="text-center mt-3">Daily Calorie Calculator</h1>
-        <form class="text-center">
+        <form class="text-center" id="calorie-count">
             <div class="input-group mx-auto">
-                <label class="input-group-text" for="calorieBudget">Enter Your Maintenance Calorie Amount:</label>
-                <input id="calorieBudget" type="number" min=0 placeholder="maintenance calories" class="form-control" required/>
+                <label class="input-group-text" for="calorie-budget">Enter Your Maintenance Calorie Amount:</label>
+                <input id="calorie-budget" type="number" min=0 placeholder="maintenance calories" class="form-control" required/>
             </div>
             <fieldset id="breakfast">
                 <legend>Breakfast</legend>
@@ -36,23 +36,23 @@
                 <div class="input-container"></div>
             </fieldset>
             <div class="input-group mx-auto" id="entry">
-                <label class="input-group-text" for="entryType">Add Food or Exercise Entry</label>
-                <select class="form-select" id="entryType">
+                <label class="input-group-text" for="entry-type">Add Food or Exercise Entry</label>
+                <select class="form-select" id="entry-type">
                     <option value="breakfast" selected>Breakfast</option>
                     <option value="lunch">Lunch</option>
                     <option value="dinner">Dinner</option>
                     <option value="snacks">Snacks</option>
                     <option value="exercise">Exercise</option>
                 </select>
-                <button class="btn btn-primary" id="entryBtn" type="button">Add Entry</button>
+                <button class="btn btn-primary" id="entry-btn" type="button">Add Entry</button>
             </div>
-            <div id="mainBtns">
-                <button class="btn btn-primary" id="calculateBtn" type="submit">Calculate Calories Today</button>
-                <button class="btn btn-primary" id="clearBtn" type="button">Clear</button>
-            </div>
+            
+            <button class="btn btn-primary" id="calculate-btn" type="submit">Calculate Calories Today</button>
+            <button class="btn btn-primary" id="clear-btn" type="button">Clear</button>
+            
         </form>
-        <div id="results"></div>
+        <div id="results" class="text-center mx-auto"></div>
     </div>
-
+    <script src="./script.js"></script>
 </body>
 </html>
