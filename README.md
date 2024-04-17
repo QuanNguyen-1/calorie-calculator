@@ -1,2 +1,2 @@
 # calorie-calculator
-A website that can calculate daily calorie intake and output.
+A web application that calculates the users calories made using Javascript, HTML, CSS, and Bootstrap. A user will input their maintenance calories and entries of their meals and exercise. They can enter their entries based on breakfast, dinner, lunch, snacks, or exercise. The application then calculates whether the user is in a calorie surplus or deficit, the amount of the surplus or deficit, the amount of calories consumed, and the amount of calories burned.
